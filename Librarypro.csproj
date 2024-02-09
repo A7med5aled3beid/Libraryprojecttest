@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7257F4DF-ED4D-43F9-8CDF-785802E8DEB5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Librarypro</RootNamespace>
+    <AssemblyName>Librarypro</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>.\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v14.1.UI, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dal\cl_validate.cs" />
+    <Compile Include="dal\Dbconnect.cs" />
+    <Compile Include="dal\form.cs" />
+    <Compile Include="dal\login.cs" />
+    <Compile Include="dal\panal.cs" />
+    <Compile Include="dal\retrivedata.cs" />
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frm_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_main.Designer.cs">
+      <DependentUpon>frm_main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frm_Account_Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frm_Account_Customers.Designer.cs">
+      <DependentUpon>frm_Account_Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frm_Account_Vendores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frm_Account_Vendores.Designer.cs">
+      <DependentUpon>frm_Account_Vendores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frm_cust_data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frm_cust_data.Designer.cs">
+      <DependentUpon>frm_cust_data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frm_distributeitem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frm_distributeitem.Designer.cs">
+      <DependentUpon>frm_distributeitem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frm_emp_data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frm_emp_data.Designer.cs">
+      <DependentUpon>frm_emp_data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frm_home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frm_home.Designer.cs">
+      <DependentUpon>frm_home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frm_itemscateg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frm_itemscateg.Designer.cs">
+      <DependentUpon>frm_itemscateg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frm_item_categories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frm_item_categories.Designer.cs">
+      <DependentUpon>frm_item_categories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frm_purchases.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frm_purchases.Designer.cs">
+      <DependentUpon>frm_purchases.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frm_sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frm_sales.Designer.cs">
+      <DependentUpon>frm_sales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frm_store_convert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frm_store_convert.Designer.cs">
+      <DependentUpon>frm_store_convert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frm_ven_data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frm_ven_data.Designer.cs">
+      <DependentUpon>frm_ven_data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frm_view_Accountcust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frm_view_Accountcust.Designer.cs">
+      <DependentUpon>frm_view_Accountcust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frm_view_acountvenors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frm_view_acountvenors.Designer.cs">
+      <DependentUpon>frm_view_acountvenors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\joptype.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\joptype.Designer.cs">
+      <DependentUpon>joptype.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\me.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\me.Designer.cs">
+      <DependentUpon>me.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\store_data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\store_data.Designer.cs">
+      <DependentUpon>store_data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frm_main.resx">
+      <DependentUpon>frm_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frm_Account_Customers.resx">
+      <DependentUpon>frm_Account_Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frm_Account_Vendores.resx">
+      <DependentUpon>frm_Account_Vendores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frm_cust_data.resx">
+      <DependentUpon>frm_cust_data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frm_distributeitem.resx">
+      <DependentUpon>frm_distributeitem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frm_emp_data.resx">
+      <DependentUpon>frm_emp_data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frm_home.resx">
+      <DependentUpon>frm_home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frm_itemscateg.resx">
+      <DependentUpon>frm_itemscateg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frm_item_categories.resx">
+      <DependentUpon>frm_item_categories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frm_purchases.resx">
+      <DependentUpon>frm_purchases.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frm_sales.resx">
+      <DependentUpon>frm_sales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frm_store_convert.resx">
+      <DependentUpon>frm_store_convert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frm_ven_data.resx">
+      <DependentUpon>frm_ven_data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frm_view_Accountcust.resx">
+      <DependentUpon>frm_view_Accountcust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frm_view_acountvenors.resx">
+      <DependentUpon>frm_view_acountvenors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\joptype.resx">
+      <DependentUpon>joptype.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\me.resx">
+      <DependentUpon>me.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\store_data.resx">
+      <DependentUpon>store_data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Report\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\تصميم بدون عنوان %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-crowd-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-staff-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-stationary-65.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-branches-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-buy-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-buy-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-buy-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-trolley-cart-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shopping-bag-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-report-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BL\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sendbackward_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bringforward_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fullstackedarea_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fullstackedarea_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphicloads-Flat-Finance-Person.256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Google-Noto-Emoji-Objects-62863-books.64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inipagi-Business-Economic-Store.64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aha-Soft-Large-Seo-SEO.64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Software-Windows-Close-Program.64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Piictogrammers-Material-Dock-window.64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custom-Icon-Design-Flatastic-4-Male-user-add.24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custom-Icon-Design-Flatastic-4-Male-user-accept.24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custom-Icon-Design-Flatastic-4-Male-user-edit.24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custom-Icon-Design-Flatastic-4-Male-user-remove.24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custom-Icon-Design-Flatastic-4-Male-user-search.24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Close.24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paomedia-Small-N-Flat-Sign-add.24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paomedia-Small-N-Flat-Sign-check.24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paomedia-Small-N-Flat-Pencil.24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paomedia-Small-N-Flat-Sign-delete.24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paomedia-Small-N-Flat-Sign-error.24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paomedia-Small-N-Flat-House.24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paomedia-Small-N-Flat-House.64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paomedia-Small-N-Flat-House.48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons-Land-Vista-People-Office-Customer-Male-Light.24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oxygen-Icons.org-Oxygen-Actions-resource-group.24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons-Land-Vista-People-Occupations-Technical-Support-Representative-Male-Dark.24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Handdrawngoods-Busy-Newspaper-jobs.24 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fatcow-Farm-Fresh-Category-item.24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
